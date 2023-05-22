@@ -35,5 +35,6 @@ namespace Opgave_2._2
 
                 reader.Close();
             }
+        }
     }
 }
