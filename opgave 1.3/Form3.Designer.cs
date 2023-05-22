@@ -71,6 +71,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.textBox1.Location = new System.Drawing.Point(1092, 140);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(341, 29);
@@ -174,6 +175,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.textBox2.Location = new System.Drawing.Point(552, 421);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(539, 29);
@@ -190,6 +192,7 @@
             // 
             // textBox3
             // 
+            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.textBox3.Location = new System.Drawing.Point(552, 480);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(539, 29);
@@ -206,6 +209,7 @@
             // 
             // textBox4
             // 
+            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.textBox4.Location = new System.Drawing.Point(552, 539);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(539, 29);
@@ -213,21 +217,23 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button1.Location = new System.Drawing.Point(552, 601);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(352, 74);
             this.button1.TabIndex = 48;
             this.button1.Text = "Bestil tid";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button4.Location = new System.Drawing.Point(552, 681);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(352, 53);
             this.button4.TabIndex = 49;
             this.button4.Text = "Tilbage til forrige side";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             // 
             // Form3
             // 
