@@ -1,0 +1,39 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Opgave_2._2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string connectionString = "Data Source=mssql14.unoeuro.com;Initial " +
+                "Catalog=minting_dk_db_test;Persist " +
+                "Security Info=True;User " +
+                "ID=minting_dk;Password=Bf6RnaA4remFHt5czdpx";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string query = "SELECT * FROM Kunde ORDER BY Adresse";
+
+                SqlCommand command = new SqlCommand(query, connection);
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    int id = (int)reader["KundeID"];
+                    string name = (string)reader["Adresse"];
+
+                    Console.WriteLine($"ID: {id}, Name: {name}");
+                }
+
+                reader.Close();
+            }
+    }
+}
