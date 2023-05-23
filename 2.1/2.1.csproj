@@ -59,6 +59,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>shocknet_dk_db_shockDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="shocknet_dk_db_shockDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shocknet_dk_db_shockDataSet11.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,9 +96,21 @@
     <None Include="shocknet_dk_db_shockDataSet1.xss">
       <DependentUpon>shocknet_dk_db_shockDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="shocknet_dk_db_shockDataSet11.xsc">
+      <DependentUpon>shocknet_dk_db_shockDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="shocknet_dk_db_shockDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shocknet_dk_db_shockDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shocknet_dk_db_shockDataSet11.xss">
+      <DependentUpon>shocknet_dk_db_shockDataSet11.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
