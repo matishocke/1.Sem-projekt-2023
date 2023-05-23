@@ -19,6 +19,10 @@ namespace _2._1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'shocknet_dk_db_shockDataSet1.Vare' table. You can move, or remove it, as needed.
+            this.vareTableAdapter.Fill(this.shocknet_dk_db_shockDataSet1.Vare);
+            // TODO: This line of code loads data into the 'shocknet_dk_db_shockDataSet.kunde' table. You can move, or remove it, as needed.
+            this.kundeTableAdapter.Fill(this.shocknet_dk_db_shockDataSet.kunde);
 
         }
     }
