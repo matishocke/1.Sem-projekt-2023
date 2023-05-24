@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="shocknet_dk_db_shock" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=mssql15.unoeuro.com;Initial Catalog=shocknet_dk_db_shock;Persist Security Info=True;User ID=shocknet_dk" SettingsObjectName="Opgave_2._1.Properties.Settings" SettingsPropertyName="shocknet_dk_db_shockConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.kunde" Member="kundes">
+    <Type Name="kunde">
+      <Column Name="kundeNr" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Fornavn" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Efternavn" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TelefonNr" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Adresse" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="cprnummer" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Vare" Member="Vares">
+    <Type Name="Vare">
+      <Column Name="Varenr" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Pris" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Storrelse" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="VareNavn" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

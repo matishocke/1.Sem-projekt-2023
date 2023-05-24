@@ -22,5 +22,16 @@ namespace Opgave_2._1.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=mssql15.unoeuro.com;Initial Catalog=shocknet_dk_db_shock;Persist Secu" +
+            "rity Info=True;User ID=shocknet_dk;Password=FkEHxcB432DAbamzp5tw")]
+        public string shocknet_dk_db_shockConnectionString {
+            get {
+                return ((string)(this["shocknet_dk_db_shockConnectionString"]));
+            }
+        }
     }
 }
