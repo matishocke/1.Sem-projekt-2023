@@ -34,8 +34,6 @@
             this.varebtn_Slet = new System.Windows.Forms.Button();
             this.kundebtn_AEndre = new System.Windows.Forms.Button();
             this.kundebtn_Slet = new System.Windows.Forms.Button();
-            this.tb_varenr = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.tb_pris = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.tb_varenavn = new System.Windows.Forms.TextBox();
@@ -56,8 +54,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tb_Email = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.tb_kundeNr = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_vare)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_kunde)).BeginInit();
             this.SuspendLayout();
@@ -70,8 +66,10 @@
             this.dgv_vare.Name = "dgv_vare";
             this.dgv_vare.RowHeadersWidth = 72;
             this.dgv_vare.RowTemplate.Height = 31;
+            this.dgv_vare.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_vare.Size = new System.Drawing.Size(917, 384);
             this.dgv_vare.TabIndex = 111;
+            this.dgv_vare.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_vare_CellContentDoubleClick);
             // 
             // dgv_kunde
             // 
@@ -96,6 +94,7 @@
             this.varebtn_AEndre.TabIndex = 109;
             this.varebtn_AEndre.Text = "Ændre";
             this.varebtn_AEndre.UseVisualStyleBackColor = false;
+            this.varebtn_AEndre.Click += new System.EventHandler(this.varebtn_AEndre_Click);
             // 
             // varebtn_Slet
             // 
@@ -106,6 +105,7 @@
             this.varebtn_Slet.TabIndex = 108;
             this.varebtn_Slet.Text = "Slet";
             this.varebtn_Slet.UseVisualStyleBackColor = false;
+            this.varebtn_Slet.Click += new System.EventHandler(this.varebtn_Slet_Click);
             // 
             // kundebtn_AEndre
             // 
@@ -128,22 +128,6 @@
             this.kundebtn_Slet.Text = "Slet";
             this.kundebtn_Slet.UseVisualStyleBackColor = false;
             this.kundebtn_Slet.Click += new System.EventHandler(this.kundebtn_Slet_Click);
-            // 
-            // tb_varenr
-            // 
-            this.tb_varenr.Location = new System.Drawing.Point(1321, 29);
-            this.tb_varenr.Name = "tb_varenr";
-            this.tb_varenr.Size = new System.Drawing.Size(252, 29);
-            this.tb_varenr.TabIndex = 105;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(1138, 33);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(87, 25);
-            this.label7.TabIndex = 104;
-            this.label7.Text = "Vare nr :";
             // 
             // tb_pris
             // 
@@ -202,6 +186,7 @@
             this.varebtn_Opret.TabIndex = 97;
             this.varebtn_Opret.Text = "Opret Vare";
             this.varebtn_Opret.UseVisualStyleBackColor = false;
+            this.varebtn_Opret.Click += new System.EventHandler(this.varebtn_Opret_Click);
             // 
             // tb_cpr
             // 
@@ -310,29 +295,11 @@
             this.label4.TabIndex = 112;
             this.label4.Text = "Email :";
             // 
-            // tb_kundeNr
-            // 
-            this.tb_kundeNr.Location = new System.Drawing.Point(142, 12);
-            this.tb_kundeNr.Name = "tb_kundeNr";
-            this.tb_kundeNr.Size = new System.Drawing.Size(252, 29);
-            this.tb_kundeNr.TabIndex = 115;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(6, 12);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(103, 25);
-            this.label11.TabIndex = 114;
-            this.label11.Text = "Kunde nr :";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1832, 883);
-            this.Controls.Add(this.tb_kundeNr);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.tb_Email);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dgv_vare);
@@ -341,8 +308,6 @@
             this.Controls.Add(this.varebtn_Slet);
             this.Controls.Add(this.kundebtn_AEndre);
             this.Controls.Add(this.kundebtn_Slet);
-            this.Controls.Add(this.tb_varenr);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.tb_pris);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.tb_varenavn);
@@ -379,8 +344,6 @@
         private System.Windows.Forms.Button varebtn_Slet;
         private System.Windows.Forms.Button kundebtn_AEndre;
         private System.Windows.Forms.Button kundebtn_Slet;
-        private System.Windows.Forms.TextBox tb_varenr;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tb_pris;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox tb_varenavn;
@@ -401,8 +364,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tb_Email;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox tb_kundeNr;
-        private System.Windows.Forms.Label label11;
     }
 }
 
