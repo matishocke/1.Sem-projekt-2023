@@ -23,7 +23,7 @@ namespace Opgave_2._2
             // Open connection to database
             connection.Open();
 
-            // SQL query
+            // SQL query. Sorter Varerne efter lavest pris til højeste
             string query = "SELECT * FROM Vare ORDER BY Pris";
 
             SqlCommand command = new SqlCommand(query, connection);
@@ -37,14 +37,15 @@ namespace Opgave_2._2
                 double pris = (double)reader["Pris"];
                 double størrelse = (double)reader["Storrelse"];
                 string navn = (string)reader["VareNavn"];
+                DateTime dato = (DateTime)reader["Dato"];
+
+                string udprint = $"VareNr: {id}, Pris: {pris}, Størrelse: {størrelse}, Navn: {navn}, Dato: {dato}";
 
                 // Appends the values to the text file.
-                System.IO.File.AppendAllText("Varer.txt", $"VareNr: {id}, Pris: {pris}, Størrelse: {størrelse}, Navn: {navn}"
-                    + Environment.NewLine);
-
-                Console.WriteLine($"VareNr: {id}, Pris: {pris}, Størrelse: {størrelse}, Navn: {navn}");
+                System.IO.File.AppendAllText("Varer.txt", udprint + Environment.NewLine);
+                Console.WriteLine(udprint);
             }
-            // Close connection to databse
+            // Close connection to database
             reader.Close();
             
             Console.ReadLine();
