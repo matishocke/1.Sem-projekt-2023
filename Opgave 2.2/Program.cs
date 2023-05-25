@@ -12,26 +12,37 @@ namespace Opgave_2._2
         static void Main(string[] args)
         {
             // Address of database
-            string connectionString = "Data Source=mssql14.unoeuro.com;Initial " +
-                "Catalog=minting_dk_db_test;Persist " +
-                "Security Info=True;User " +
-                "ID=minting_dk;Password=Bf6RnaA4remFHt5czdpx";
+            SqlConnection connection = new SqlConnection("Data Source=mssql15.unoeuro.com;Initial " +
+            "Catalog=shocknet_dk_db_shock;Persist " +
+            "Security Info=True;User " +
+            "ID=shocknet_dk;Password=FkEHxcB432DAbamzp5tw");
 
-            SqlConnection connection = new SqlConnection(connectionString);
+
+            System.IO.File.WriteAllText("Varer.txt", "");
+
             // Open connection to database
             connection.Open();
 
-            string query = "SELECT * FROM Kunde ORDER BY Adresse";
+            // SQL query
+            string query = "SELECT * FROM Vare ORDER BY Pris";
 
             SqlCommand command = new SqlCommand(query, connection);
             SqlDataReader reader = command.ExecuteReader();
 
+            // Loops through every row in the database table. When there is no more rows, the while-loop breaks.
             while (reader.Read())
             {
-                int id = (int)reader["KundeID"];
-                string name = (string)reader["Adresse"];
+                // reads the values in all of the columns
+                int id = (int)reader["Varenr"];
+                double pris = (double)reader["Pris"];
+                double størrelse = (double)reader["Storrelse"];
+                string navn = (string)reader["VareNavn"];
 
-                Console.WriteLine($"ID: {id}, Name: {name}");
+                // Appends the values to the text file.
+                System.IO.File.AppendAllText("Varer.txt", $"VareNr: {id}, Pris: {pris}, Størrelse: {størrelse}, Navn: {navn}"
+                    + Environment.NewLine);
+
+                Console.WriteLine($"VareNr: {id}, Pris: {pris}, Størrelse: {størrelse}, Navn: {navn}");
             }
             // Close connection to databse
             reader.Close();

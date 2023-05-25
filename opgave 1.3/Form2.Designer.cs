@@ -50,9 +50,9 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.textBox1.Location = new System.Drawing.Point(1089, 139);
+            this.textBox1.Location = new System.Drawing.Point(1188, 145);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(341, 29);
+            this.textBox1.Size = new System.Drawing.Size(372, 31);
             this.textBox1.TabIndex = 21;
             this.textBox1.Text = "Søg efter";
             // 
@@ -60,9 +60,9 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(897, 138);
+            this.label8.Location = new System.Drawing.Point(979, 144);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(84, 29);
+            this.label8.Size = new System.Drawing.Size(93, 31);
             this.label8.TabIndex = 20;
             this.label8.Text = "Om os";
             // 
@@ -70,9 +70,9 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(635, 138);
+            this.label9.Location = new System.Drawing.Point(693, 144);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(152, 29);
+            this.label9.Size = new System.Drawing.Size(172, 31);
             this.label9.TabIndex = 19;
             this.label9.Text = "Kontaktlinser";
             // 
@@ -80,9 +80,9 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(448, 138);
+            this.label10.Location = new System.Drawing.Point(489, 144);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(109, 29);
+            this.label10.Size = new System.Drawing.Size(122, 31);
             this.label10.TabIndex = 18;
             this.label10.Text = "Køb vare";
             // 
@@ -90,9 +90,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(874, 47);
+            this.label5.Location = new System.Drawing.Point(953, 49);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(163, 29);
+            this.label5.Size = new System.Drawing.Size(188, 31);
             this.label5.TabIndex = 17;
             this.label5.Text = "Mit SynsPunkt";
             // 
@@ -100,9 +100,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(635, 47);
+            this.label4.Location = new System.Drawing.Point(693, 49);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(170, 29);
+            this.label4.Size = new System.Drawing.Size(190, 31);
             this.label4.TabIndex = 16;
             this.label4.Text = "Kunde Service";
             // 
@@ -110,9 +110,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(448, 47);
+            this.label3.Location = new System.Drawing.Point(489, 49);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(118, 29);
+            this.label3.Size = new System.Drawing.Size(132, 31);
             this.label3.TabIndex = 15;
             this.label3.Text = "Find butik";
             // 
@@ -120,9 +120,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(11, 21);
+            this.label2.Location = new System.Drawing.Point(12, 22);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 29);
+            this.label2.Size = new System.Drawing.Size(145, 31);
             this.label2.TabIndex = 14;
             this.label2.Text = "SynsPunkt";
             // 
@@ -130,18 +130,18 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(546, 292);
+            this.label1.Location = new System.Drawing.Point(596, 304);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(317, 54);
+            this.label1.Size = new System.Drawing.Size(370, 63);
             this.label1.TabIndex = 22;
             this.label1.Text = "Vælg din butik";
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button2.Location = new System.Drawing.Point(595, 374);
+            this.button2.Location = new System.Drawing.Point(649, 390);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(219, 59);
+            this.button2.Size = new System.Drawing.Size(239, 61);
             this.button2.TabIndex = 24;
             this.button2.Text = "Vejle";
             this.button2.UseVisualStyleBackColor = false;
@@ -149,9 +149,9 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button1.Location = new System.Drawing.Point(359, 374);
+            this.button1.Location = new System.Drawing.Point(392, 390);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(219, 59);
+            this.button1.Size = new System.Drawing.Size(239, 61);
             this.button1.TabIndex = 23;
             this.button1.Text = "Fredericia";
             this.button1.UseVisualStyleBackColor = false;
@@ -159,9 +159,9 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button3.Location = new System.Drawing.Point(832, 374);
+            this.button3.Location = new System.Drawing.Point(908, 390);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(219, 59);
+            this.button3.Size = new System.Drawing.Size(239, 61);
             this.button3.TabIndex = 25;
             this.button3.Text = "Kolding";
             this.button3.UseVisualStyleBackColor = false;
@@ -169,54 +169,54 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button4.Location = new System.Drawing.Point(538, 655);
+            this.button4.Location = new System.Drawing.Point(587, 682);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(352, 53);
+            this.button4.Size = new System.Drawing.Size(384, 55);
             this.button4.TabIndex = 26;
             this.button4.Text = "Tilbage til forrige side";
             this.button4.UseVisualStyleBackColor = false;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(359, 508);
+            this.dateTimePicker1.Location = new System.Drawing.Point(392, 529);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(692, 29);
+            this.dateTimePicker1.Size = new System.Drawing.Size(755, 31);
             this.dateTimePicker1.TabIndex = 27;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(359, 466);
+            this.label6.Location = new System.Drawing.Point(392, 485);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(131, 25);
+            this.label6.Size = new System.Drawing.Size(144, 25);
             this.label6.TabIndex = 28;
             this.label6.Text = "Vælg tidpunkt";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(675, 250);
+            this.label11.Location = new System.Drawing.Point(736, 260);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(64, 25);
+            this.label11.Size = new System.Drawing.Size(68, 25);
             this.label11.TabIndex = 29;
             this.label11.Text = "Step2";
             // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button5.Location = new System.Drawing.Point(538, 569);
+            this.button5.Location = new System.Drawing.Point(587, 593);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(352, 67);
+            this.button5.Size = new System.Drawing.Size(384, 70);
             this.button5.TabIndex = 30;
             this.button5.Text = "Bekræft";
             this.button5.UseVisualStyleBackColor = false;
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1501, 753);
+            this.ClientSize = new System.Drawing.Size(1637, 784);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label6);
