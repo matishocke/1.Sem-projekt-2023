@@ -17,6 +17,7 @@
       <Column Name="Pris" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
       <Column Name="Storrelse" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
       <Column Name="VareNavn" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Dato" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

@@ -305,6 +305,8 @@ namespace Opgave_2._1.Database
 		
 		private string _VareNavn;
 		
+		private System.Nullable<System.DateTime> _Dato;
+		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -317,6 +319,8 @@ namespace Opgave_2._1.Database
     partial void OnStorrelseChanged();
     partial void OnVareNavnChanging(string value);
     partial void OnVareNavnChanged();
+    partial void OnDatoChanging(System.Nullable<System.DateTime> value);
+    partial void OnDatoChanged();
     #endregion
 		
 		public Vare()
@@ -400,6 +404,26 @@ namespace Opgave_2._1.Database
 					this._VareNavn = value;
 					this.SendPropertyChanged("VareNavn");
 					this.OnVareNavnChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Dato", DbType="DateTime")]
+		public System.Nullable<System.DateTime> Dato
+		{
+			get
+			{
+				return this._Dato;
+			}
+			set
+			{
+				if ((this._Dato != value))
+				{
+					this.OnDatoChanging(value);
+					this.SendPropertyChanging();
+					this._Dato = value;
+					this.SendPropertyChanged("Dato");
+					this.OnDatoChanged();
 				}
 			}
 		}
