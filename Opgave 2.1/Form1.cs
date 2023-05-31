@@ -99,6 +99,7 @@ namespace Opgave_2._1
             newVare.VareNavn = tb_varenavn.Text;
             newVare.Pris = Convert.ToDouble(tb_pris.Text);
             newVare.Dato = dateTimePicker1.Value;
+            newVare.kundeNr = Convert.ToInt32(tb_KundenriVARE.Text);  ///new
 
             dcCreat.Vares.InsertOnSubmit(newVare);
             dcCreat.SubmitChanges();
@@ -127,6 +128,7 @@ namespace Opgave_2._1
             tb_stoerrelse.Text = dgv_vare.CurrentRow.Cells[2].Value.ToString();
             tb_varenavn.Text = dgv_vare.CurrentRow.Cells[3].Value.ToString();
             tb_pris.Text = dgv_vare.CurrentRow.Cells[1].Value.ToString();
+            tb_KundenriVARE.Text = dgv_vare.CurrentRow.Cells[5].Value.ToString(); ///new
             //dateTimePicker1.Value = dgv_vare.CurrentCell.Value[4].Value
         }
 
@@ -159,6 +161,7 @@ namespace Opgave_2._1
             vareChange.VareNavn = tb_varenavn.Text;
             vareChange.Pris = Convert.ToDouble(tb_pris.Text);
             vareChange.Dato = dateTimePicker1.Value;
+            vareChange.kundeNr = Convert.ToInt32(tb_KundenriVARE.Text); ///neew
 
             dcChange.SubmitChanges();
 

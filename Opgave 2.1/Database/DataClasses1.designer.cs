@@ -307,6 +307,8 @@ namespace Opgave_2._1.Database
 		
 		private System.Nullable<System.DateTime> _Dato;
 		
+		private System.Nullable<int> _kundeNr;
+		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -321,6 +323,8 @@ namespace Opgave_2._1.Database
     partial void OnVareNavnChanged();
     partial void OnDatoChanging(System.Nullable<System.DateTime> value);
     partial void OnDatoChanged();
+    partial void OnkundeNrChanging(System.Nullable<int> value);
+    partial void OnkundeNrChanged();
     #endregion
 		
 		public Vare()
@@ -424,6 +428,26 @@ namespace Opgave_2._1.Database
 					this._Dato = value;
 					this.SendPropertyChanged("Dato");
 					this.OnDatoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_kundeNr", DbType="Int")]
+		public System.Nullable<int> kundeNr
+		{
+			get
+			{
+				return this._kundeNr;
+			}
+			set
+			{
+				if ((this._kundeNr != value))
+				{
+					this.OnkundeNrChanging(value);
+					this.SendPropertyChanging();
+					this._kundeNr = value;
+					this.SendPropertyChanged("kundeNr");
+					this.OnkundeNrChanged();
 				}
 			}
 		}

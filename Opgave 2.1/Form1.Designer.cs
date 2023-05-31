@@ -62,6 +62,8 @@
             this.label13 = new System.Windows.Forms.Label();
             this.tb_vareNr = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
+            this.tb_KundenriVARE = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_vare)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_kunde)).BeginInit();
             this.SuspendLayout();
@@ -70,7 +72,7 @@
             // 
             this.dgv_vare.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_vare.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_vare.Location = new System.Drawing.Point(620, 444);
+            this.dgv_vare.Location = new System.Drawing.Point(620, 408);
             this.dgv_vare.Name = "dgv_vare";
             this.dgv_vare.RowHeadersWidth = 72;
             this.dgv_vare.RowTemplate.Height = 31;
@@ -97,7 +99,7 @@
             // varebtn_AEndre
             // 
             this.varebtn_AEndre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.varebtn_AEndre.Location = new System.Drawing.Point(431, 650);
+            this.varebtn_AEndre.Location = new System.Drawing.Point(431, 614);
             this.varebtn_AEndre.Name = "varebtn_AEndre";
             this.varebtn_AEndre.Size = new System.Drawing.Size(169, 64);
             this.varebtn_AEndre.TabIndex = 109;
@@ -108,7 +110,7 @@
             // varebtn_Slet
             // 
             this.varebtn_Slet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.varebtn_Slet.Location = new System.Drawing.Point(431, 580);
+            this.varebtn_Slet.Location = new System.Drawing.Point(431, 544);
             this.varebtn_Slet.Name = "varebtn_Slet";
             this.varebtn_Slet.Size = new System.Drawing.Size(169, 64);
             this.varebtn_Slet.TabIndex = 108;
@@ -140,7 +142,7 @@
             // 
             // tb_pris
             // 
-            this.tb_pris.Location = new System.Drawing.Point(158, 653);
+            this.tb_pris.Location = new System.Drawing.Point(158, 617);
             this.tb_pris.Name = "tb_pris";
             this.tb_pris.Size = new System.Drawing.Size(252, 29);
             this.tb_pris.TabIndex = 103;
@@ -148,7 +150,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(20, 658);
+            this.label8.Location = new System.Drawing.Point(20, 622);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(56, 25);
             this.label8.TabIndex = 102;
@@ -156,7 +158,7 @@
             // 
             // tb_varenavn
             // 
-            this.tb_varenavn.Location = new System.Drawing.Point(158, 598);
+            this.tb_varenavn.Location = new System.Drawing.Point(158, 562);
             this.tb_varenavn.Name = "tb_varenavn";
             this.tb_varenavn.Size = new System.Drawing.Size(252, 29);
             this.tb_varenavn.TabIndex = 101;
@@ -164,7 +166,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(20, 603);
+            this.label9.Location = new System.Drawing.Point(20, 567);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(138, 25);
             this.label9.TabIndex = 100;
@@ -172,7 +174,7 @@
             // 
             // tb_stoerrelse
             // 
-            this.tb_stoerrelse.Location = new System.Drawing.Point(158, 545);
+            this.tb_stoerrelse.Location = new System.Drawing.Point(158, 509);
             this.tb_stoerrelse.Name = "tb_stoerrelse";
             this.tb_stoerrelse.Size = new System.Drawing.Size(252, 29);
             this.tb_stoerrelse.TabIndex = 99;
@@ -180,7 +182,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(20, 549);
+            this.label10.Location = new System.Drawing.Point(20, 513);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(101, 25);
             this.label10.TabIndex = 98;
@@ -189,7 +191,7 @@
             // varebtn_Opret
             // 
             this.varebtn_Opret.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.varebtn_Opret.Location = new System.Drawing.Point(431, 510);
+            this.varebtn_Opret.Location = new System.Drawing.Point(431, 474);
             this.varebtn_Opret.Name = "varebtn_Opret";
             this.varebtn_Opret.Size = new System.Drawing.Size(169, 64);
             this.varebtn_Opret.TabIndex = 97;
@@ -318,7 +320,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(19, 444);
+            this.label11.Location = new System.Drawing.Point(19, 408);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(78, 32);
             this.label11.TabIndex = 115;
@@ -327,7 +329,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(20, 709);
+            this.label12.Location = new System.Drawing.Point(20, 673);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(64, 25);
             this.label12.TabIndex = 116;
@@ -335,7 +337,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(90, 709);
+            this.dateTimePicker1.Location = new System.Drawing.Point(90, 673);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(320, 29);
             this.dateTimePicker1.TabIndex = 117;
@@ -358,7 +360,7 @@
             // 
             // tb_vareNr
             // 
-            this.tb_vareNr.Location = new System.Drawing.Point(158, 494);
+            this.tb_vareNr.Location = new System.Drawing.Point(158, 458);
             this.tb_vareNr.Name = "tb_vareNr";
             this.tb_vareNr.Size = new System.Drawing.Size(252, 29);
             this.tb_vareNr.TabIndex = 121;
@@ -366,17 +368,35 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(20, 498);
+            this.label14.Location = new System.Drawing.Point(20, 462);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(82, 25);
             this.label14.TabIndex = 120;
             this.label14.Text = "Varenr :";
+            // 
+            // tb_KundenriVARE
+            // 
+            this.tb_KundenriVARE.Location = new System.Drawing.Point(158, 727);
+            this.tb_KundenriVARE.Name = "tb_KundenriVARE";
+            this.tb_KundenriVARE.Size = new System.Drawing.Size(252, 29);
+            this.tb_KundenriVARE.TabIndex = 123;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(20, 732);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(98, 25);
+            this.label15.TabIndex = 122;
+            this.label15.Text = "Kundenr :";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1832, 883);
+            this.Controls.Add(this.tb_KundenriVARE);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.tb_vareNr);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.tb_kundenr);
@@ -457,6 +477,8 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox tb_vareNr;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox tb_KundenriVARE;
+        private System.Windows.Forms.Label label15;
     }
 }
 
