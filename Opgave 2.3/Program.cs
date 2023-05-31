@@ -43,7 +43,7 @@ namespace Opgave_2._3
                 DateTime dato = (DateTime)reader["Dato"];
                 int kundeNr = (int)reader["kundeNr"];
 
-                string udprint = $"Kundenummer: {kundeNr}, Navn {navn}, Dato: {dato} Pris: {pris}";
+                string udprint = $"Kundenummer: {kundeNr}, Vare: {navn}, Dato: {dato} Pris: {pris}";
 
                 // Appends the values to the text file.
                 System.IO.File.AppendAllText("Salgsstatistik.txt", udprint + Environment.NewLine);
